@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.19)
+project(sotest)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pedantic")
+
+find_package(Boost CONFIG 1.64.0 COMPONENTS headers json REQUIRED SYSTEM)
+find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
+add_compile_definitions(PRIVATE BOOST_ASIO_NO_DEPRECATED)
+link_libraries(Boost::json)
+link_libraries(Qt5::Core Qt5::Widgets)
+link_libraries(ssl crypto)
+
+add_executable(orig           orig.cpp           wsclient-skeleton.cpp)
+add_executable(minimal-change minimal-change.cpp wsclient-skeleton.cpp)
+add_executable(implement      implement.cpp      wsclient-asio-example.cpp)
