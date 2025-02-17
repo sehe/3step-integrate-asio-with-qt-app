@@ -27,3 +27,6 @@ From https://stackoverflow.com/questions/79440040/how-do-i-call-async-write-mult
  
  Note that I did extend `WSClient::Session` to have a `setHandler` method
  so you can implement `process_message` in the user code.
+
+ [Screencast from 2025-02-17 04-34-35.webm](https://github.com/user-attachments/assets/3a8c3162-07ab-46a5-b53c-18cd7ade1161)
+
