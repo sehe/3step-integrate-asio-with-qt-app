@@ -2,14 +2,14 @@
 
 From https://stackoverflow.com/questions/79440040/how-do-i-call-async-write-multiple-times-and-send-data-to-the-server-boostas/79440804?noredirect=1#comment140106566_79440804
  
-  - 1 orig.cpp
-  - 2 minimal-change.cpp
-  - 3 implement.cpp
+  - 1 [orig.cpp](orig.cpp)
+  - 2 [minimal-change.cpp](minimal-change.cpp)
+  - 3 [implement.cpp](implement.cpp)
  
  1. The simplest GUI application starting point
  
- 2. Using wsclient-skeleton.cpp as a minimal stub to implement the
-    wsclient.h interface
+ 2. Using [wsclient-skeleton.cpp](wsclient-skeleton.cpp) as a minimal stub to implement the
+    [wsclient.h](wsclient.h) interface
  
  3. Uses the Asio implementation from my answer to implement the exact
     same interface.
